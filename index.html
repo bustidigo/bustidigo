@@ -1,0 +1,593 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bustidigo Syndrome | Bustidigo Clinical Services</title>
+
+<style>
+/* =====================================
+   CUSTOM SETTINGS
+===================================== */
+:root {
+    --navy: #243F68;
+    --navy-dark: #172A48;
+    --link: #003399;
+    --background: #FFFFFF;
+    --page-background: #E9E9E9;
+    --border: #B7B7B7;
+    --text: #222222;
+    --gray: #666666;
+    --light-gray: #F1F1F1;
+    --font: Arial, Helvetica, sans-serif;
+}
+
+/* =====================================
+   GENERAL
+===================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--page-background);
+    font-family: var(--font);
+    color: var(--text);
+    font-size: 13px;
+}
+
+a {
+    color: var(--link);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #CC0000;
+}
+
+/* =====================================
+   PAGE WRAPPER
+===================================== */
+#page {
+    width: 960px;
+    max-width: 96%;
+    margin: 25px auto;
+    background: var(--background);
+    border: 1px solid #999999;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+.header {
+    padding: 20px 25px 15px;
+    background: #FFFFFF;
+    border-bottom: 5px solid var(--navy);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--navy);
+    letter-spacing: -0.5px;
+}
+
+.logo small {
+    font-size: 11px;
+    font-weight: normal;
+    color: #555555;
+    letter-spacing: 0;
+}
+
+.tagline {
+    margin-top: 7px;
+    font-size: 11px;
+    color: #666666;
+}
+
+/* =====================================
+   NAVIGATION
+===================================== */
+.nav {
+    background: var(--navy);
+    padding: 0 15px;
+    height: 36px;
+    border-bottom: 3px solid var(--navy-dark);
+}
+
+.nav button {
+    height: 33px;
+    padding: 0 22px;
+    border: none;
+    border-right: 1px solid #536A88;
+    background: transparent;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav button:hover {
+    background: #435C7E;
+}
+
+.nav button.active {
+    background: #FFFFFF;
+    color: var(--navy);
+    border-top: 3px solid #FFFFFF;
+}
+
+/* =====================================
+   CONTENT LAYOUT
+===================================== */
+.content {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.sidebar {
+    width: 190px;
+    flex-shrink: 0;
+    border: 1px solid var(--border);
+    background: #F7F7F7;
+}
+
+.sidebar-title {
+    background: var(--navy);
+    color: #FFFFFF;
+    padding: 8px 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 7px 10px;
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #E4EAF2;
+    text-decoration: underline;
+}
+
+.sidebar-info {
+    padding: 10px;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #555555;
+}
+
+.main {
+    flex: 1;
+    min-width: 0;
+}
+
+/* =====================================
+   PAGE SECTIONS
+===================================== */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+h1 {
+    color: var(--navy);
+    font-size: 23px;
+    margin: 0 0 6px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #D4D4D4;
+}
+
+h2 {
+    color: var(--navy);
+    font-size: 16px;
+    margin-top: 22px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 13px;
+    color: #333333;
+    margin-top: 16px;
+}
+
+p {
+    line-height: 1.7;
+    margin: 10px 0;
+}
+
+.small {
+    font-size: 11px;
+    color: #666666;
+}
+
+.breadcrumb {
+    font-size: 11px;
+    color: #777777;
+    margin-bottom: 15px;
+}
+
+/* =====================================
+   TABLES
+===================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+td, th {
+    border: 1px solid #CCCCCC;
+    padding: 9px;
+    text-align: left;
+}
+
+th {
+    background: #E8E8E8;
+    font-weight: bold;
+}
+
+td.label {
+    width: 35%;
+    background: #F4F4F4;
+    font-weight: bold;
+}
+
+/* =====================================
+   NOTICE BOXES
+===================================== */
+.notice {
+    border: 1px solid #B8B8B8;
+    background: #F6F6F6;
+    padding: 12px;
+    margin: 15px 0;
+}
+
+.notice-title {
+    font-weight: bold;
+    color: var(--navy);
+    margin-bottom: 5px;
+}
+
+.status-box {
+    border: 1px solid #AAAAAA;
+    background: #EEEEEE;
+    padding: 10px;
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+.footer {
+    border-top: 1px solid #AAAAAA;
+    background: #F1F1F1;
+    padding: 15px 20px;
+    font-size: 11px;
+    color: #666666;
+    line-height: 1.8;
+}
+
+.footer a {
+    margin-right: 12px;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+@media(max-width: 650px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .nav {
+        height: auto;
+        padding: 0;
+    }
+
+    .nav button {
+        padding: 0 12px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div id="page">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            BUSTIDIGO CLINICAL SERVICES
+            <small>™</small>
+        </div>
+
+        <div class="tagline">
+            Behavioral Health Information &amp; Patient Education
+            &nbsp; | &nbsp; Las Vegas, Nevada
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <button class="active" onclick="openTab('bustidigo',this)">
+            BUSTIDIGO
+        </button>
+
+        <button onclick="openTab('symptoms',this)">
+            SYMPTOMS
+        </button>
+
+        <button onclick="openTab('summary',this)">
+            SUMMARY
+        </button>
+    </nav>
+
+    <!-- BODY -->
+    <div class="content">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-title">Information Center</div>
+
+            <a href="#" onclick="openTab('bustidigo',document.querySelectorAll('.nav button')[0]);return false;">
+                Overview
+            </a>
+
+            <a href="#" onclick="openTab('symptoms',document.querySelectorAll('.nav button')[1]);return false;">
+                Symptoms &amp; Signs
+            </a>
+
+            <a href="#" onclick="openTab('summary',document.querySelectorAll('.nav button')[2]);return false;">
+                Clinical Summary
+            </a>
+
+            <a href="#references">
+                References
+            </a>
+
+            <div class="sidebar-title">Department</div>
+
+            <div class="sidebar-info">
+                Behavioral Health<br>
+                Clinical Documentation<br>
+                Las Vegas, NV
+            </div>
+
+            <div class="sidebar-title">Document Details</div>
+
+            <div class="sidebar-info">
+                Document No.: BS-001<br>
+                Revision: 1.0<br>
+                Updated: 06/14/2010
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main">
+
+            <!-- TAB 1 -->
+            <section id="bustidigo" class="section active">
+
+                <div class="breadcrumb">
+                    Home &gt; Clinical Information &gt; Bustidigo Syndrome
+                </div>
+
+                <h1>Bustidigo Syndrome</h1>
+
+                <p class="small">
+                    Clinical Information &nbsp; | &nbsp;
+                    Department of Behavioral Health
+                </p>
+
+                <div class="notice">
+                    <div class="notice-title">
+                        General Information
+                    </div>
+
+                    This document provides general information regarding
+                    Bustidigo Syndrome, including its characteristics,
+                    clinical observations, and associated symptoms.
+                </div>
+
+                <h2>Overview</h2>
+
+                <p>
+                    Bustidigo Syndrome is a documented condition
+                    characterized by an intense need for attention, or validation.it also has similar side effects which seem similar to depression, or dissasociative personality disorder.
+                    Further information regarding its presentation and
+                    associated manifestations is provided in the sections
+                    below.
+                </p>
+
+                <h2>Condition Information</h2>
+
+                <table>
+                    <tr>
+                        <td class="label">Condition Name</td>
+                        <td>Bustidigo Syndrome</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Classification</td>
+                        <td>[Insert Classification]</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Department</td>
+                        <td>Behavioral Health</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Document Reference</td>
+                        <td>BS-001</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Documentation Status</td>
+                        <td>Active</td>
+                    </tr>
+                </table>
+
+                <h2>Background</h2>
+
+                <p>
+                    bustidigo syndrome is a rare mental health disorder with little to no people who have it.<br>
+                  its been there since the mid 1950s but it is not recognised, as the symptoms are usually seen as a mix of multiple disorders and are listed as such.but it is not. 
+                </p>
+
+            </section>
+
+            <!-- TAB 2 -->
+            <section id="symptoms" class="section">
+
+                <div class="breadcrumb">
+                    Home &gt; Clinical Information &gt; Symptoms
+                </div>
+
+                <h1>Symptoms &amp; Signs</h1>
+
+                <p>
+                    The following section contains information
+                    regarding the observed symptoms and clinical
+                    manifestations associated with Bustidigo Syndrome.
+                </p>
+
+                <h2>Estimated Symptoms</h2>
+
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>
+                    <tr>
+                        <td>Rejection Sensitivity</td>
+                        <td>[Insert description]</td>
+                    </tr>
+                    <tr>
+                        <td>Symptom 02</td>
+                        <td>[Insert description]</td>
+                    </tr>
+                    <tr>
+                        <td>Symptom 03</td>
+                        <td>[Insert description]</td>
+                    </tr>
+                </table>
+
+                <h2>Secondary Manifestations</h2>
+
+                <p>
+                    [Insert secondary symptoms, behavioral changes,
+                    or additional observations.]
+                </p>
+
+                <h2>Clinical Observations</h2>
+
+                <div class="notice">
+                    <div class="notice-title">Observation Notes</div>
+                    [Insert observations and additional documentation.]
+                </div>
+
+            </section>
+
+            <!-- TAB 3 -->
+            <section id="summary" class="section">
+
+                <div class="breadcrumb">
+                    Home &gt; Clinical Information &gt; Summary
+                </div>
+
+                <h1>Clinical Summary</h1>
+
+                <h2>Summary of Findings</h2>
+
+                <p>
+                    [Insert a concise summary of Bustidigo Syndrome,
+                    including its defining characteristics and
+                    documented manifestations.]
+                </p>
+
+                <h2>Conclusions</h2>
+
+                <p>
+                    [Insert concluding observations and relevant
+                    documentation.]
+                </p>
+
+                <div class="status-box">
+                    <strong>DOCUMENT STATUS:</strong>
+                    Internal Clinical Reference
+                    <br>
+                    <strong>REFERENCE NUMBER:</strong> BS-001
+                </div>
+
+                <h2 id="references">References</h2>
+
+                <p class="small">
+                    [Insert references, documentation sources,
+                    or relevant records.]
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <strong>Bustidigo Clinical Services</strong><br>
+
+        Las Vegas, Nevada &nbsp; | &nbsp;
+        Behavioral Health Information Center<br>
+
+        <a href="#">Contact</a>
+        <a href="#">Privacy Statement</a>
+        <a href="#">Disclaimer</a>
+
+        <br>
+
+        Copyright &copy; 2010 Bustidigo Clinical Services.
+        All rights reserved.
+    </footer>
+
+</div>
+
+<script>
+function openTab(id, button) {
+
+    document.querySelectorAll(".section").forEach(function(section) {
+        section.classList.remove("active");
+    });
+
+    document.querySelectorAll(".nav button").forEach(function(tab) {
+        tab.classList.remove("active");
+    });
+
+    document.getElementById(id).classList.add("active");
+    button.classList.add("active");
+
+}
+</script>
+
+</body>
+</html>
