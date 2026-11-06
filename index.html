@@ -6,311 +6,278 @@
 <title>Bustidigo Syndrome Bustidigo Clinical Services</title>
 
 <style>
-/* =====================================
-   CUSTOM SETTINGS
-===================================== */
 :root {
-    --navy: #243F68;
-    --navy-dark: #172A48;
-    --link: #003399;
-    --background: #FFFFFF;
-    --page-background: #E9E9E9;
-    --border: #B7B7B7;
-    --text: #222222;
-    --gray: #666666;
-    --light-gray: #F1F1F1;
-    --font: Arial, Helvetica, sans-serif;
+ --navy: #243F68;
+ --navy-dark: #172A48;
+ --link: #003399;
+ --background: #FFFFFF;
+ --page-background: #E9E9E9;
+ --border: #B7B7B7;
+ --text: #222222;
+ --gray: #666666;
+ --light-gray: #F1F1F1;
+ --font: Arial, Helvetica, sans-serif;
 }
 
-/* =====================================
-   GENERAL
-===================================== */
 * {
-    box-sizing: border-box;
+ box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background: var(--page-background);
-    font-family: var(--font);
-    color: var(--text);
-    font-size: 13px;
+ margin: 0;
+ padding: 0;
+ background: var(--page-background);
+ font-family: var(--font);
+ color: var(--text);
+ font-size: 13px;
 }
 
 a {
-    color: var(--link);
-    text-decoration: underline;
+ color: var(--link);
+ text-decoration: underline;
 }
 
 a:hover {
-    color: #CC0000;
+ color: #CC0000;
 }
 
-/* =====================================
-   PAGE WRAPPER
-===================================== */
 #page {
-    width: 960px;
-    max-width: 96%;
-    margin: 25px auto;
-    background: var(--background);
-    border: 1px solid #999999;
+ width: 960px;
+ max-width: 96%;
+ margin: 25px auto;
+ background: var(--background);
+ border: 1px solid #999999;
 }
 
-/* =====================================
-   HEADER
-===================================== */
 .header {
-    padding: 20px 25px 15px;
-    background: #FFFFFF;
-    border-bottom: 5px solid var(--navy);
+ padding: 20px 25px 15px;
+ background: #FFFFFF;
+ border-bottom: 5px solid var(--navy);
 }
 
 .logo {
-    font-size: 25px;
-    font-weight: bold;
-    color: var(--navy);
-    letter-spacing: -0.5px;
+ font-size: 25px;
+ font-weight: bold;
+ color: var(--navy);
+ letter-spacing: -0.5px;
 }
 
 .logo small {
-    font-size: 11px;
-    font-weight: normal;
-    color: #555555;
-    letter-spacing: 0;
+ font-size: 11px;
+ font-weight: normal;
+ color: #555555;
+ letter-spacing: 0;
 }
 
 .tagline {
-    margin-top: 7px;
-    font-size: 11px;
-    color: #666666;
+ margin-top: 7px;
+ font-size: 11px;
+ color: #666666;
 }
 
-/* =====================================
-   NAVIGATION
-===================================== */
 .nav {
-    background: var(--navy);
-    padding: 0 15px;
-    height: 36px;
-    border-bottom: 3px solid var(--navy-dark);
+ background: var(--navy);
+ padding: 0 15px;
+ height: 36px;
+ border-bottom: 3px solid var(--navy-dark);
 }
 
 .nav button {
-    height: 33px;
-    padding: 0 22px;
-    border: none;
-    border-right: 1px solid #536A88;
-    background: transparent;
-    color: #FFFFFF;
-    font-family: Arial;
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
+ height: 33px;
+ padding: 0 22px;
+ border: none;
+ border-right: 1px solid #536A88;
+ background: transparent;
+ color: #FFFFFF;
+ font-family: Arial;
+ font-size: 12px;
+ font-weight: bold;
+ cursor: pointer;
 }
 
 .nav button:hover {
-    background: #435C7E;
+ background: #435C7E;
 }
 
 .nav button.active {
-    background: #FFFFFF;
-    color: var(--navy);
-    border-top: 3px solid #FFFFFF;
+ background: #FFFFFF;
+ color: var(--navy);
+ border-top: 3px solid #FFFFFF;
 }
 
-/* =====================================
-   CONTENT LAYOUT
-===================================== */
 .content {
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
+ padding: 20px;
+ display: flex;
+ gap: 20px;
+ align-items: flex-start;
 }
 
 .sidebar {
-    width: 190px;
-    flex-shrink: 0;
-    border: 1px solid var(--border);
-    background: #F7F7F7;
+ width: 190px;
+ flex-shrink: 0;
+ border: 1px solid var(--border);
+ background: #F7F7F7;
 }
 
 .sidebar-title {
-    background: var(--navy);
-    color: #FFFFFF;
-    padding: 8px 10px;
-    font-weight: bold;
-    font-size: 12px;
+ background: var(--navy);
+ color: #FFFFFF;
+ padding: 8px 10px;
+ font-weight: bold;
+ font-size: 12px;
 }
 
 .sidebar a {
-    display: block;
-    padding: 7px 10px;
-    border-bottom: 1px solid #DDDDDD;
-    font-size: 12px;
-    text-decoration: none;
+ display: block;
+ padding: 7px 10px;
+ border-bottom: 1px solid #DDDDDD;
+ font-size: 12px;
+ text-decoration: none;
 }
 
 .sidebar a:hover {
-    background: #E4EAF2;
-    text-decoration: underline;
+ background: #E4EAF2;
+ text-decoration: underline;
 }
 
 .sidebar-info {
-    padding: 10px;
-    font-size: 11px;
-    line-height: 1.6;
-    color: #555555;
+ padding: 10px;
+ font-size: 11px;
+ line-height: 1.6;
+ color: #555555;
 }
 
 .main {
-    flex: 1;
-    min-width: 0;
+ flex: 1;
+ min-width: 0;
 }
 
-/* =====================================
-   PAGE SECTIONS
-===================================== */
 .section {
-    display: none;
+ display: none;
 }
 
 .section.active {
-    display: block;
+ display: block;
 }
 
 h1 {
-    color: var(--navy);
-    font-size: 23px;
-    margin: 0 0 6px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #D4D4D4;
+ color: var(--navy);
+ font-size: 23px;
+ margin: 0 0 6px;
+ padding-bottom: 8px;
+ border-bottom: 2px solid #D4D4D4;
 }
 
 h2 {
-    color: var(--navy);
-    font-size: 16px;
-    margin-top: 22px;
-    margin-bottom: 8px;
-    border-bottom: 1px solid #CCCCCC;
-    padding-bottom: 5px;
+ color: var(--navy);
+ font-size: 16px;
+ margin-top: 22px;
+ margin-bottom: 8px;
+ border-bottom: 1px solid #CCCCCC;
+ padding-bottom: 5px;
 }
 
 h3 {
-    font-size: 13px;
-    color: #333333;
-    margin-top: 16px;
+ font-size: 13px;
+ color: #333333;
+ margin-top: 16px;
 }
 
 p {
-    line-height: 1.7;
-    margin: 10px 0;
+ line-height: 1.7;
+ margin: 10px 0;
 }
 
 .small {
-    font-size: 11px;
-    color: #666666;
+ font-size: 11px;
+ color: #666666;
 }
 
 .breadcrumb {
-    font-size: 11px;
-    color: #777777;
-    margin-bottom: 15px;
+ font-size: 11px;
+ color: #777777;
+ margin-bottom: 15px;
 }
 
-/* =====================================
-   TABLES
-===================================== */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 12px;
-    font-size: 12px;
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 12px;
+ font-size: 12px;
 }
 
 td, th {
-    border: 1px solid #CCCCCC;
-    padding: 9px;
-    text-align: left;
+ border: 1px solid #CCCCCC;
+ padding: 9px;
+ text-align: left;
 }
 
 th {
-    background: #E8E8E8;
-    font-weight: bold;
+ background: #E8E8E8;
+ font-weight: bold;
 }
 
 td.label {
-    width: 35%;
-    background: #F4F4F4;
-    font-weight: bold;
+ width: 35%;
+ background: #F4F4F4;
+ font-weight: bold;
 }
 
-/* =====================================
-   NOTICE BOXES
-===================================== */
 .notice {
-    border: 1px solid #B8B8B8;
-    background: #F6F6F6;
-    padding: 12px;
-    margin: 15px 0;
+ border: 1px solid #B8B8B8;
+ background: #F6F6F6;
+ padding: 12px;
+ margin: 15px 0;
 }
 
 .notice-title {
-    font-weight: bold;
-    color: var(--navy);
-    margin-bottom: 5px;
+ font-weight: bold;
+ color: var(--navy);
+ margin-bottom: 5px;
 }
 
 .status-box {
-    border: 1px solid #AAAAAA;
-    background: #EEEEEE;
-    padding: 10px;
-    font-size: 11px;
-    margin-top: 20px;
+ border: 1px solid #AAAAAA;
+ background: #EEEEEE;
+ padding: 10px;
+ font-size: 11px;
+ margin-top: 20px;
 }
 
-/* =====================================
-   FOOTER
-===================================== */
 .footer {
-    border-top: 1px solid #AAAAAA;
-    background: #F1F1F1;
-    padding: 15px 20px;
-    font-size: 11px;
-    color: #666666;
-    line-height: 1.8;
+ border-top: 1px solid #AAAAAA;
+ background: #F1F1F1;
+ padding: 15px 20px;
+ font-size: 11px;
+ color: #666666;
+ line-height: 1.8;
 }
 
 .footer a {
-    margin-right: 12px;
+ margin-right: 12px;
 }
 
-/* =====================================
-   RESPONSIVE
-===================================== */
 @media(max-width: 650px) {
-    .content {
-        flex-direction: column;
-    }
+ .content {
+ flex-direction: column;
+ }
 
-    .sidebar {
-        width: 100%;
-    }
+ .sidebar {
+ width: 100%;
+ }
 
-    .nav {
-        height: auto;
-        padding: 0;
-    }
+ .nav {
+ height: auto;
+ padding: 0;
+ }
 
-    .nav button {
-        padding: 0 12px;
-    }
+ .nav button {
+ padding: 0 12px;
+ }
 
-    .logo {
-        font-size: 19px;
-    }
+ .logo {
+ font-size: 19px;
+ }
 }
 </style>
 </head>
@@ -319,257 +286,264 @@ td.label {
 
 <div id="page">
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="logo">
-            BUSTIDIGO CLINICAL SERVICES
-            <small>™</small>
-        </div>
+<header class="header">
+ <div class="logo">
+ BUSTIDIGO CLINICAL SERVICES
+ <small>™</small>
+ </div>
 
-        <div class="tagline">
-            Behavioral Health Information &amp; Patient Education
-            &nbsp; | &nbsp; Las Vegas, Nevada
-        </div>
-    </header>
+ <div class="tagline">
+ Behavioral Health Information &amp; Patient Education
+ &nbsp; | &nbsp; Las Vegas, Nevada
+ </div>
+</header>
 
-    <!-- NAVIGATION -->
-    <nav class="nav">
-        <button class="active" onclick="openTab('bustidigo',this)">
-            BUSTIDIGO
-        </button>
+<nav class="nav">
+ <button class="active" onclick="openTab('bustidigo',this)">
+ BUSTIDIGO
+ </button>
 
-        <button onclick="openTab('symptoms',this)">
-            SYMPTOMS
-        </button>
+ <button onclick="openTab('symptoms',this)">
+ SYMPTOMS
+ </button>
 
-        <button onclick="openTab('summary',this)">
-            SUMMARY
-        </button>
-    </nav>
+ <button onclick="openTab('summary',this)">
+ SUMMARY
+ </button>
+</nav>
 
-    <!-- BODY -->
-    <div class="content">
+<div class="content">
 
-        <!-- SIDEBAR -->
-        <aside class="sidebar">
-            <div class="sidebar-title">Information Center</div>
+<aside class="sidebar">
+ <div class="sidebar-title">Information Center</div>
 
-            <a href="#" onclick="openTab('bustidigo',document.querySelectorAll('.nav button')[0]);return false;">
-                Overview
-            </a>
+ <a href="#" onclick="openTab('bustidigo',document.querySelectorAll('.nav button')[0]);return false;">
+ Overview
+ </a>
 
-            <a href="#" onclick="openTab('symptoms',document.querySelectorAll('.nav button')[1]);return false;">
-                Symptoms &amp; Signs
-            </a>
+ <a href="#" onclick="openTab('symptoms',document.querySelectorAll('.nav button')[1]);return false;">
+ Symptoms &amp; Signs
+ </a>
 
-            <a href="#" onclick="openTab('summary',document.querySelectorAll('.nav button')[2]);return false;">
-                Clinical Summary
-            </a>
+ <a href="#" onclick="openTab('summary',document.querySelectorAll('.nav button')[2]);return false;">
+ Clinical Summary
+ </a>
 
-            <a href="#references">
-                References
-            </a>
+ <a href="#references">
+ References
+ </a>
 
-            <div class="sidebar-title">Department</div>
+ <div class="sidebar-title">Department</div>
 
-            <div class="sidebar-info">
-                Behavioral Health<br>
-                Clinical Documentation<br>
-                Las Vegas, NV
-            </div>
+ <div class="sidebar-info">
+ Behavioral Health<br>
+ Clinical Documentation<br>
+ Las Vegas, NV
+ </div>
 
-            <div class="sidebar-title">Document Details</div>
+ <div class="sidebar-title">Document Details</div>
 
-            <div class="sidebar-info">
-                Document No.: BS-001<br>
-                Revision: 1.0<br>
-                Updated: 06/14/2010
-            </div>
-        </aside>
+ <div class="sidebar-info">
+ Document No.: BS-001<br>
+ Revision: 1.0<br>
+ Updated: 06/14/2010
+ </div>
+</aside>
 
-        <!-- MAIN CONTENT -->
-        <main class="main">
+<main class="main">
 
-            <!-- TAB 1 -->
-            <section id="bustidigo" class="section active">
+<section id="bustidigo" class="section active">
 
-                <div class="breadcrumb">
-                    Home &gt; Clinical Information &gt; Bustidigo Syndrome
-                </div>
+ <div class="breadcrumb">
+ Home &gt; Clinical Information &gt; Bustidigo Syndrome
+ </div>
 
-                <h1>Bustidigo Syndrome</h1>
+ <h1>Bustidigo Syndrome</h1>
 
-                <p class="small">
-                    Clinical Information &nbsp; | &nbsp;
-                    Department of Behavioral Health
-                </p>
+ <p class="small">
+ Clinical Information &nbsp; | &nbsp;
+ Department of Behavioral Health
+ </p>
 
-                <div class="notice">
-                    <div class="notice-title">
-                        General Information
-                    </div>
+ <div class="notice">
+ <div class="notice-title">
+ General Information
+ </div>
 
-                    This document provides general information regarding
-                    Bustidigo Syndrome, including its characteristics,
-                    clinical observations, and associated symptoms.
-                </div>
+ This document provides general information regarding
+ Bustidigo Syndrome, including its characteristics,
+ clinical observations, and associated symptoms.
+ </div>
 
-                <h2>Overview</h2>
+ <h2>Overview</h2>
 
-                <p>
-                    Bustidigo Syndrome is a documented condition
-                    characterized by an intense need for attention, or validation.it also has similar side effects which seem similar to depression, or dissasociative personality disorder.
-                    Further information regarding its presentation and
-                    associated manifestations is provided in the sections
-                    below.
-                </p>
+ <p>
+ Bustidigo Syndrome is a documented condition
+ characterized by an intense need for attention, or validation.it also has similar side effects which seem similar to depression, or dissasociative personality disorder.
+ Further information regarding its presentation and
+ associated manifestations is provided in the sections
+ below.
+ </p>
 
-                <h2>Condition Information</h2>
+ <h2>Condition Information</h2>
 
-                <table>
-                    <tr>
-                        <td class="label">Condition Name</td>
-                        <td>Bustidigo Syndrome</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Classification</td>
-                        <td>Personality Disorder</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Department</td>
-                        <td>Behavioral Health</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Document Reference</td>
-                        <td>BS-001</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Documentation Status</td>
-                        <td>Active</td>
-                    </tr>
-                </table>
+ <table>
+ <tr>
+ <td class="label">Condition Name</td>
+ <td>Bustidigo Syndrome</td>
+ </tr>
+ <tr>
+ <td class="label">Classification</td>
+ <td>Personality Disorder</td>
+ </tr>
+ <tr>
+ <td class="label">Department</td>
+ <td>Behavioral Health</td>
+ </tr>
+ <tr>
+ <td class="label">Document Reference</td>
+ <td>BS-001</td>
+ </tr>
+ <tr>
+ <td class="label">Documentation Status</td>
+ <td>Active</td>
+ </tr>
+ </table>
 
-                <h2>Background</h2>
+ <h2>Background</h2>
 
-                <p>
-                    bustidigo syndrome is a rare mental health disorder with little to no people who have it.<br>
-                  its been there since the mid 1950s but it is not recognised, as the symptoms are usually seen as a mix of multiple disorders and are listed as such.but it is not. 
-                </p>
+ <p>
+ bustidigo syndrome is a rare mental health disorder with little to no people who have it.<br>
+ its been there since the mid 1950s but it is not recognised, as the symptoms are usually seen as a mix of multiple disorders and are listed as such.but it is not.
+ </p>
 
-            </section>
+</section>
 
-            <!-- TAB 2 -->
-            <section id="symptoms" class="section">
+<section id="symptoms" class="section">
 
-                <div class="breadcrumb">
-                    Home &gt; Clinical Information &gt; Symptoms
-                </div>
+ <div class="breadcrumb">
+ Home &gt; Clinical Information &gt; Symptoms
+ </div>
 
-                <h1>Symptoms &amp; Signs</h1>
+ <h1>Symptoms &amp; Signs</h1>
 
-                <p>
-                    The following section contains information
-                    regarding the observed symptoms and clinical
-                    manifestations associated with Bustidigo Syndrome.
-                </p>
+ <p>
+ The following section contains information
+ regarding the observed symptoms and clinical
+ manifestations associated with Bustidigo Syndrome.
+ </p>
 
-                <h2>Estimated Symptoms</h2>
+ <h2>Estimated Symptoms</h2>
 
-                <table>
-                   
-                    <tr>
-                        <td>Episodic Memory Disturbance</td>
-                        <td>The individual experiences inconsistencies in recalling emotionally charged interpersonal events. Memories may become fragmented, incomplete, or unusually difficult to retrieve, particularly when associated with intense emotional distress.</td>
-                    </tr>
-                    <tr>
-                        <td>Emotional Blunting</td>
-                        <td>The individual experiences periods of diminished emotional responsiveness, appearing unusually detached from events that would ordinarily provoke distress, guilt, or concern.</td>
-                    </tr>
-                    <tr>
-                        <td>Selective Emotional Recall</td>
-                        <td>The individual disproportionately remembers events that reinforce their personal grievances while struggling to recall circumstances that contradict their interpretations. Their recollections may become increasingly distorted over time.</td>
-                    </tr>
-                </table>
+ <table>
 
-                <h2>Secondary Manifestations</h2>
+ <tr>
+ <td>Episodic Memory Disturbance</td>
+ <td>The individual experiences inconsistencies in recalling emotionally charged interpersonal events. Memories may become fragmented, incomplete, or unusually difficult to retrieve, particularly when associated with intense emotional distress.</td>
+ </tr>
 
-                <p>
-                Secondary manifestations refer to associated behavioral, emotional, or cognitive difficulties that may accompany the primary characteristics of the fictional condition.
+ <tr>
+ <td>Emotional Blunting</td>
+ <td>The individual experiences periods of diminished emotional responsiveness, appearing unusually detached from events that would ordinarily provoke distress, guilt, or concern.</td>
+ </tr>
+
+ <tr>
+ <td>Selective Emotional Recall</td>
+ <td>The individual disproportionately remembers events that reinforce their personal grievances while struggling to recall circumstances that contradict their interpretations. Their recollections may become increasingly distorted over time.</td>
+ </tr>
+
+ </table>
+
+ <h2>Secondary Manifestations</h2>
+
+ <p>
+ Secondary manifestations refer to associated behavioral, emotional, or cognitive difficulties that may accompany the primary characteristics of the condition.
+
 <br>Interpersonal Distrust<br>
 The individual develops persistent suspicion toward the intentions of others, frequently interpreting reassurance, criticism, or ordinary gestures as insincere.
+
 <br>Social Withdrawal<br>
 Periods of emotional distress may result in reduced communication, avoidance of familiar individuals, and diminished participation in social activities.
+
 <br>Emotional Exhaustion<br>
 The individual experiences prolonged psychological fatigue following interpersonal conflicts, emotional confrontations, or periods of heightened emotional intensity.
+
 <br>Cognitive Preoccupation<br>
 The individual becomes excessively occupied with past interactions, perceived grievances, imagined confrontations, or concerns regarding their social standing.
+
 <br>Impaired Emotional Regulation<br>
 The individual demonstrates difficulty maintaining emotional stability during stressful interpersonal situations, potentially resulting in disproportionate emotional reactions.
+
 <br>Defensive Self-Presentation<br>
 The individual becomes increasingly preoccupied with concealing perceived weaknesses, maintaining an acceptable social image, and avoiding situations that threaten their self-esteem.
+
 <br>Persistent Resentment<br>
 Perceived interpersonal offenses may remain emotionally significant for extended periods, even after the original circumstances have changed or the conflict has been resolved.
+
 <br>Distorted Self-Assessment<br>
 The individual demonstrates considerable inconsistency in evaluating their own behavior, alternating between excessive self-criticism and exaggerated self-importance.
+
 <br>Interpersonal Instability<br>
 Relationships may become characterized by alternating closeness, distrust, emotional distancing, and renewed attempts to obtain reassurance.
+
 <br>Reduced Functional Stability<br>
 The combined effects of emotional distress, interpersonal conflict, and cognitive preoccupation may interfere with the individual's ability to maintain consistent academic, occupational, or social functioning.
-                </p>
+ </p>
 
-                <h2>Clinical Observations</h2>
+ <h2>Clinical Observations</h2>
 
-                <div class="notice">
-                    <div class="notice-title">Observation Notes</div>
-                    these types of personality disorders are mostly overlooked. while in 2010, we are still working on finding mre information that may be useful to treating this disorder. there will be an update on this site when there is.
-                </div>
+ <div class="notice">
+ <div class="notice-title">Observation Notes</div>
+ these types of personality disorders are mostly overlooked. while in 2010, we are still working on finding mre information that may be useful to treating this disorder. there will be an update on this site when there is.
+ </div>
 
-            </section>
+</section>
 
-            <!-- TAB 3 -->
-            <section id="summary" class="section">
+<section id="summary" class="section">
 
-                <div class="breadcrumb">
-                    Home &gt; Clinical Information &gt; Summary
-                </div>
+ <div class="breadcrumb">
+ Home &gt; Clinical Information &gt; Summary
+ </div>
 
-                <h1>Clinical Summary</h1>
+ <h1>Clinical Summary</h1>
 
-                <h2>Summary of Findings</h2>
+ <h2>Summary of Findings</h2>
 
-                <p>
-                   Bustidigu Personality Disorder is characterized by persistent emotional instability, distorted interpersonal perceptions, excessive dependence on external validation, and maladaptive behavioral patterns.
+ <p>
+ Bustidigu Personality Disorder is characterized by persistent emotional instability, distorted interpersonal perceptions, excessive dependence on external validation, and maladaptive behavioral patterns.
 
 Individuals exhibiting the condition may experience substantial difficulties maintaining stable self-perception, emotional regulation, and interpersonal relationships. Their experiences may include recurrent resentment, distrust, cognitive preoccupation, emotional detachment, and inconsistent recollection of emotionally significant events.
 
 Associated behavioral manifestations may include compulsive deception, hostile interpretations of interpersonal interactions, retaliatory ideation, and episodes of aggressive disinhibition. These characteristics may contribute to deteriorating relationships, impaired social functioning, and persistent interpersonal conflict.
 
 Secondary manifestations can include social withdrawal, emotional exhaustion, defensive self-presentation, persistent grievances, and reduced functional stability.
-                </p>
+ </p>
 
-                <h2>Conclusions</h2>
+ <h2>Conclusions</h2>
 
-                <p>
-                Bustidigu Personality Disorder (BS)
+ <p>
+ Bustidigu Personality Disorder (BS)
 
 Bustidigu Personality Disorder is a psychological condition characterized by persistent disturbances in self-perception, emotional regulation, interpersonal functioning, and behavioral restraint. Its manifestations encompass cognitive inconsistencies, emotional instability, interpersonal hostility, and maladaptive coping behaviors.
 
-The condition is conceptualized as a complex and potentially chronic disorder in which emotional distress and dysfunctional interpersonal patterns may contribute to significant impairment in daily functioning. Its hypothetical presentation demonstrates considerable variability, with manifestations ranging from emotional withdrawal and cognitive disturbances to severe interpersonal dysfunction.
-                </p>
+The condition is conceptualized as a complex and potentially chronic disorder in which emotional distress and dysfunctional interpersonal patterns may contribute to significant impairment in daily functioning. Its presentation demonstrates considerable variability, with manifestations ranging from emotional withdrawal and cognitive disturbances to severe interpersonal dysfunction.
+ </p>
 
-                <div class="status-box">
-                    <strong>DOCUMENT STATUS:</strong>
-                    Internal Clinical Reference
-                    <br>
-                    <strong>REFERENCE NUMBER:</strong> BS-001
-                </div>
+ <div class="status-box">
+ <strong>DOCUMENT STATUS:</strong>
+ Internal Clinical Reference
+ <br>
+ <strong>REFERENCE NUMBER:</strong> BS-001
+ </div>
 
-                <h2 id="references">References</h2>
+ <h2 id="references">References</h2>
 
-                <p class="small">
-                  although very little have this disorder. There is one person who was subject to this disorder and wanted to tell us about it<br>
-                   when asked "how does it feel to have bustidigo syndrome?" he said<br>
-                   "I don't know, man. It's hard to explain. I just get pissed off a lot, I guess. Like, somebody can say something completely normal and I'll take it the wrong way. Then I'm sitting there thinking about it for hours. It's embarrassing, honestly.
+ <p class="small">
+ although very little have this disorder. There is one person who was subject to this disorder and wanted to tell us about it<br>
+
+ when asked "how does it feel to have bustidigo syndrome?" he said<br>
+
+ "I don't know, man. It's hard to explain. I just get pissed off a lot, I guess. Like, somebody can say something completely normal and I'll take it the wrong way. Then I'm sitting there thinking about it for hours. It's embarrassing, honestly.
 
 And I hate being ignored. Like, seriously hate it. I'll act like I don't care, but I do. A lot. I don't know why I'm like that. Sometimes I feel like nobody would even notice if I disappeared for a week. Then somebody actually checks on me and I get annoyed for some reason. Makes no fucking sense.
 
@@ -580,46 +554,45 @@ My memory's kinda weird sometimes. I'll remember an argument completely differen
 And, uh... I get angry. Really angry. Over stupid stuff. Sometimes I wanna punch somebody just for making me feel like an idiot. I know that's fucked up. I'm not saying I actually do it every time.
 
 I dunno. I just wish I could stop giving a shit about what everybody thinks. That'd probably make things a lot easier."
-                </p>
+ </p>
 
-            </section>
+</section>
 
-        </main>
+</main>
 
-    </div>
+</div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <strong>Bustidigo Clinical Services</strong><br>
+<footer class="footer">
+ <strong>Bustidigo Clinical Services</strong><br>
 
-        Las Vegas, Nevada &nbsp; | &nbsp;
-        Behavioral Health Information Center<br>
+ Las Vegas, Nevada &nbsp; | &nbsp;
+ Behavioral Health Information Center<br>
 
-        <a href="#">Contact</a>
-        <a href="#">Privacy Statement</a>
-        <a href="#">Disclaimer</a>
+ <a href="#">Contact</a>
+ <a href="#">Privacy Statement</a>
+ <a href="#">Disclaimer</a>
 
-        <br>
+ <br>
 
-        Copyright &copy; 2010 Bustidigo Clinical Services.
-        All rights reserved.
-    </footer>
+ Copyright &copy; 2010 Bustidigo Clinical Services.
+ All rights reserved.
+</footer>
 
 </div>
 
 <script>
 function openTab(id, button) {
 
-    document.querySelectorAll(".section").forEach(function(section) {
-        section.classList.remove("active");
-    });
+ document.querySelectorAll(".section").forEach(function(section) {
+ section.classList.remove("active");
+ });
 
-    document.querySelectorAll(".nav button").forEach(function(tab) {
-        tab.classList.remove("active");
-    });
+ document.querySelectorAll(".nav button").forEach(function(tab) {
+ tab.classList.remove("active");
+ });
 
-    document.getElementById(id).classList.add("active");
-    button.classList.add("active");
+ document.getElementById(id).classList.add("active");
+ button.classList.add("active");
 
 }
 </script>
